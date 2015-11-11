@@ -8,7 +8,8 @@
   },
   "devDependencies": {
     "gulp": "^3.9.0",
-    "gulp-inline-css": "^3.0.0"
+    "gulp-inline-css": "^3.0.0",
+    "gulp-uncss": "^1.0.4"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

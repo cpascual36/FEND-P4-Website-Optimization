@@ -10,4 +10,15 @@ gulp.task('optimize', function() {
                 removeLinkTags: true
         }))
         .pipe(gulp.dest('dest/'));
+    });
+
+var gulp = require('gulp');
+var uncss = require('gulp-uncss');
+
+gulp.task('style', function () {
+    return gulp.src('src/views/css/bootstrap-grid.css')
+        .pipe(uncss({
+            html: ['src/index.html', 'src/views/pizza.html']
+        }))
+        .pipe(gulp.dest('dest/views/css/bootstrap-grid.css'));
 });
